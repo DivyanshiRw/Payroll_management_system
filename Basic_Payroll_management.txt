@@ -4,7 +4,7 @@ from tabulate import tabulate
 
 db=input('Enter Database name :')
 
-mydb=mysql.connector.connect(host='localhost',user='root',passwd='diya')
+mydb=mysql.connector.connect(host='localhost',user='root',passwd='diya')      #In passwd... write your mysql password
 mycursor=mydb.cursor()
 
 sql='CREATE DATABASE if not exists %s'%(db,)
